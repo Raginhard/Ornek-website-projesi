@@ -1,0 +1,164 @@
+/* Hexedecimmal kodlar için koddostu.com adlı siteye bakabiliriz. */
+*{
+margin: 0px; padding: 0px;
+}
+body{
+background-color:#efefef ;}
+#menu{
+    height: 74px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}
+#logo{
+    /* daha önce width 1005 değeri kullandığımız için burada kullanma durumu yoktur.Bu genişlik logo içindir. */
+    width: 400px;
+    height: 74px;/*MENU yüksekliği ile aynı yükseklikte olacak.*/
+    margin-left:80px;
+    /* Klasör içndeki dosyalara ulaşmak için url yazarız sonraasınd ise parantez içine "../" iki nokta ve slash işareti yazılır.Sonrasında eklenmek istenilen resim dosyası ismi yazılır.Otomatik olarak resime ulaşıbiliriz. */
+    background-image: url(../Ek-Dosyalar/images/logo.png);
+    float: left;/*Bunu yazmamızın amacı menü içindeki logomuzun bundan sonra hep sol tarafta kalması için.Yani logo yanına oluşturacağımız divler her zaman logo idli divin sağ tarafında kalacaktır.*/
+}
+#menukategori{
+    height: 72px;
+    width: 300px;
+    float: left;
+    /* background-color:#a10e36; */
+    margin-top: 34px;
+    margin-left: 40px;
+    margin-right: 100px;
+    color: #cccccc;
+}
+#menuyazi{
+    height: 72px;
+    width: 100px;
+    float: left;
+    margin-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#menuyazi a{
+    text-decoration: none;
+    color: #cccccc;
+    /* linklerin altındaki çizgi yok edildi ve rengi değiştirildi. */
+}
+#menuyazi a:hover{
+    color: #FF6600;
+}
+#banner{
+    width: 100%;
+    height: 520px;
+    /* background-color: red; */
+    background-image: url(../Ek-Dosyalar/images/banner.jpg);
+    left: 0;
+    margin-top: 65px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+#iconlar{
+    height: 160px;
+    width: 90%;
+    margin:auto;
+    float: left;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 620px;
+    padding-left: 100px;
+}
+#iconresmi{
+    width: 100px;
+    height: 110px;
+    background-image: url(../Ek-Dosyalar/images/biyolojiconu.png);
+    /* iki ikon arası boşluk olması için margin-right yazıldı. */
+    margin-right: 60px;
+    float: left;
+    margin-left: 220px;
+}
+#iconresmi1{
+    width: 100px;
+    height: 110px;
+    background-image: url(../Ek-Dosyalar/images/fizikiconu.png);
+    /*iki ikon arası boşluk olması için margin-right yazıldı.*/
+    float: left;
+    margin-right: 60px;
+}
+#iconresmi2{
+    width: 100px;
+    height: 110px;
+    background-image: url(../Ek-Dosyalar/images/matematikiconu.png);
+    /*iki ikon arası boşluk olması için margin-right yazıldı.*/
+    float: left;
+    margin-right: 60px;
+}
+#iconresmi3{
+    width: 100px;
+    height: 110px;
+    background-image: url(../Ek-Dosyalar/images/geometriconu.png);
+    /*iki ikon arası boşluk olması için margin-right yazıldı.*/
+    float: left;
+    margin-right: 60px;
+}
+#iconresmi4{
+    width: 100px;
+    height: 110px;
+    background-image: url(../Ek-Dosyalar/images/kimyaiconu.png);
+    /*iki ikon arası boşluk olması için margin-right yazıldı.*/
+    float: left;
+    margin-right: 60px;
+}
+#iconresmi:hover{
+    background-image:url(../Ek-Dosyalar/images/biyolojiconu1.png);
+}
+#iconresmi1:hover{
+    background-image:url(../Ek-Dosyalar/images/fizikiconu1.png);
+}
+#iconresmi2:hover{
+    background-image:url(../Ek-Dosyalar/images/matematikiconu1.png);
+}
+#iconresmi3:hover{
+    background-image:url(../Ek-Dosyalar/images/geometriconu1.png);
+}
+#iconresmi4:hover{
+    background-image:url(../Ek-Dosyalar/images/kimyaiconu1.png);
+}
+/* biyoloji.html css bölümü */
+.videobolumu{
+    height: 250px;
+    width: 300px;
+    background-color: #fff;
+    float: left;
+    margin: auto;
+    /* eşit boşluklar için */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.videosimge{
+    height: 25px;
+    width: 25px;
+    background-image: url(../Ek-Dosyalar/images/videosimge.png);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.videoyazı{
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+}
+.videobolumu:hover{
+    background-color: #FF9933;
+}
+#footer{
+    width: 100%;
+    height: 50px;
+    background:#ccc;
+    text-align: center;
+    color: white;
+    float: left;
+   
+}

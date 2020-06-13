@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="C:\Users\SAMET KESKİN\Desktop\Yazılım Çalışmaları\Örnek website projesi\css\index.css">
+    <meta name="author" content="Samet Keskin,samet_keskin_4335@yahoo.com">
+    <meta name="abstract" content="Lise seviyesi tüm derslr video platformu">
+    <meta name="content-language" content="tr">
+    <link rel="Short Icon" href="C:\Users\SAMET KESKİN\Desktop\Yazılım Çalışmaları\Örnek website projesi\Ek-Dosyalar\images\logo.png" type="image/x-icon"> 
+    <!-- Bu link websiteye link koymak içindir.İlk olarak link tagını açtık.sonra rel ile "Short Icon yazdık." sonrasında href ile kaynak resmi çektik. type ile bunun bir ikon resmi olacağını belirttik.image/x-icon -->
+    <title>Web site projem</title>
+    <script src="C:\Users\SAMET KESKİN\Desktop\Yazılım Çalışmaları\Örnek website projesi\js\jquery.min.js"></script>
+    <!-- jquery indirdik -->
+</head>
+<body>
+    <section id="Anasayfa"></section>
+    <div id="menu">
+        <div id="logo"></div>
+        <div id="menukategori">
+            <div id="menuyazi"><a href="#Anasayfa">Ana sayfa</a></div><!--burası oluşturulacak menü etiketleri(Ana sayfa,iletişim...vs)-->
+            <div id="menuyazi"><a href="#Dersler">Dersler</a></div><!--Etiketlere link ekledik.-->
+        </div>
+    </div>
+    <div id="banner"></div>
+    <div id="iconlar">
+        <center><img src="C:\Users\SAMET KESKİN\Desktop\Yazılım Çalışmaları\Örnek website projesi\Ek-Dosyalar\images\dersler.png"></center><section id="Dersler"></section>
+        <!-- center tagı içinde yazılan nesneyi ait olduğu divin içinde ortalar.Fakat bu eski HTML sürümünden kalan bir özelliketir.HTML5 te bulunmaz. -->
+        <a href="biyoloji.html" target="sayfalar"><div id="iconresmi"></div></a>
+        <a href="fizik.html" target="sayfalar"><div id="iconresmi1"></div></a> 
+        <a href="Matematik.html" target="sayfalar"><div id="iconresmi2"></div></a>
+        <a href="Geometri.html" target="sayfalar"><div id="iconresmi3"></div></a>
+        <a href="kimya.html" target="sayfalar"><div id="iconresmi4"></div></a>
+    </div id="border">
+    <iframe name="sayfalar"src="biyoloji.html" width="1200" height="850" scrolling="yes" style="margin-top:785px; margin-left:100px" frameborder="0"></iframe>
+  
+    <!-- iframe e sayfalar isminde bir name girdik.Bu name sayesinde iframe içindeki ayarladığımız özellikler yukarıda target adıyla yapılacak işlemler için kolaylık sağlamış olcak.Bu target ile linki verilen sayfaya gidilecek. -->
+    <!-- iframe farklı website sayfalarını yada videoları çekmek için kullanılır.Kullanımı iframe yazdıktan sonra src yani src attributenunun içine çekilmek isteniilen sayfanın adı yazılır sonuna uzantısı ile birlikte.Bu örnekte biz biyoloji.html sayfasını çektik ve ayrıca buna bir yükseklik ve genişlik verdik.scrolling yes diyerek de vir scroll çubuğu oluşturduk.frameborder ile iframe ile gelen sınırı kaldırabilyoruz. -->
+     <script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
+
+<div id="footer">
+  Copyright © 16.03.2020 designed by Samet Keskin.
+  </div>
+ 
+</body>
+</html>
